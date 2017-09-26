@@ -31,30 +31,30 @@ class Chick {
   {
     strokeWeight(0.1);
     fill(myColor);
-    ellipse(myX, myY+15, 30, 30);
-    ellipse(myX, myY, 20, 20);
+    ellipse(myX, myY+20, 60, 60);
+    ellipse(myX, myY, 40, 40);
     fill(255, 160, 70);
     triangle(myX-4, myY+5, myX+4, myY+5, myX, myY+12);
     fill(0);
-    ellipse(myX-3, myY, 1, 1);
-    ellipse(myX+3, myY, 1, 1);
+    ellipse(myX-10, myY, 7, 7);
+    ellipse(myX+10, myY, 7, 7);
   }
 
   void walk() {
 
     if (mouseX > myX)
     {
-      myX = myX +(int)(Math.random()*3);
+      myX = myX +(int)(Math.random()*5)+2;
     } else if (mouseX <myX)
     {
-      myX = myX +(int)(Math.random()*3)-2;
+      myX = myX +(int)(Math.random()*5)-4;
     }
     if (mouseY > myY)
     {
-      myY = myY + (int)(Math.random()*4)-1;
+      myY = myY + (int)(Math.random()*5)+2;
     } else if (mouseY < myY)
     {
-      myY = myY +(int)(Math.random()*4)-2;
+      myY = myY +(int)(Math.random()*5)-4;
     }
   }
 }
