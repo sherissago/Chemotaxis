@@ -8,7 +8,7 @@ void setup() {
 }
 
 void draw() {
-  background(187, 208, 164);
+  background(60, 100, 60);
   for (int i = 0; i <chickies.length; i++) {
     chickies[i].show();
     chickies[i].walk();
