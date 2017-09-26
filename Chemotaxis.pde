@@ -51,10 +51,10 @@ class Chick {
     }
     if (mouseY > myY)
     {
-      myY = myY + (int)(Math.random()*4);
+      myY = myY + (int)(Math.random()*4)-1;
     } else if (mouseY < myY)
     {
-      myY = myY +(int)(Math.random()*4)-3;
+      myY = myY +(int)(Math.random()*4)-2;
     }
   }
 }
